@@ -1,0 +1,11 @@
+-- 1. Create a table (e.g., for 'products')
+CREATE TABLE products (
+    id INT(11) AUTO_INCREMENT PRIMARY KEY,
+    product_name VARCHAR(255) NOT NULL,
+    price DECIMAL(10, 2) NOT NULL,
+    date_added TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+-- 2. (Optional) Insert some test data so the table isn't empty
+INSERT INTO products (product_name, price) 
+VALUES ('Sample Product', 99.99);
